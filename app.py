@@ -309,7 +309,7 @@ def md2html():
 # utility functions
 def Trending(user=None):
     if PRODUCTION_VERSION:
-        allBlogs = Blog.query.order_by(func.rand()).limit(6).all()
+        allBlogs = Blog.query.order_by(func.random()).limit(6).all()
     else:
         allBlogs = Blog.query.order_by(func.random()).limit(6).all()
     
@@ -355,7 +355,7 @@ def get_posts(chunk_size=16, userid=None, allBlogs=None):
     """
     if allBlogs is None:
         if PRODUCTION_VERSION:
-            allBlogs = Blog.query.order_by(func.rand()).limit(chunk_size).all()
+            allBlogs = Blog.query.order_by(func.random()).limit(chunk_size).all()
         else:
             allBlogs = Blog.query.order_by(func.random()).limit(chunk_size).all()
     theirUsers = [blog.author for blog in allBlogs]
