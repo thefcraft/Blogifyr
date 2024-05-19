@@ -4,6 +4,7 @@ flask_admin
 flask_sqlalchemy
 sqlalchemy
 Gunicorn
+waitress
 markdown2
 psycopg2-binary
 Pillow==9.5.0
