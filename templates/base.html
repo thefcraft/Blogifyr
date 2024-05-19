@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFFFFF">
+    <title>{{title or "Blogifyr – Uncover Gems, Explore Worlds."}}</title>
+    <meta name="robots" content="index,follow">
+    <meta name="title" content="{{title or 'Blogifyr – Uncover Gems, Explore Worlds.'}}">
+    <meta name="description" content="{{ description or 'Blogifyr: Dive into a world of captivating reads, absolutely free! Explore a myriad of topics meticulously curated to suit your interests.' }}">
+
+    <meta name="google-site-verification" content="xPrngE4BmGDuGDj3kSBkTdi5lWGj3iu0DSeUKEZMz74" />
+      
+    <!-- Twitter meta tags -->
+    <meta name="twitter:description" content="{{ description or 'Blogifyr: Dive into a world of captivating reads, absolutely free! Explore a myriad of topics meticulously curated to suit your interests.' }}">
+    <meta name="twitter:title" content="{{title or 'Blogifyr – Uncover Gems, Explore Worlds.'}}">
+    <meta property="twitter:domain" content="{{ domain }}">
+    <meta property="twitter:url" content="{{ url }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Add other Twitter meta tags as needed -->
+      
+    <!-- Open Graph meta tags -->
+    <meta property="og:description" content="{{ description or 'Blogifyr: Dive into a world of captivating reads, absolutely free! Explore a myriad of topics meticulously curated to suit your interests.' }}">
+    <meta property="og:title" content="{{title or 'Blogifyr – Uncover Gems, Explore Worlds.'}}">
+    <meta property="og:site_name" content="Blogifyr">
+    <meta property="og:url" content="{{ url }}">
+    <!-- Add other Open Graph meta tags as needed -->
+      
+ 
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/static/img/icon.webp">
+    
+    <!-- CSS and JavaScript links -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/nav.css">
+    <link rel="stylesheet" href="/static/css/contentStyle.css">
+
+    <!-- codeHighlighter -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/highlightjs@9.16.2/styles/atom-one-dark.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/highlightjs@9.16.2/styles/atom-one-light.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+      // hljs.initHighlightingOnLoad();
+      hljs.highlightAll()
+    </script>
+
+      <!-- CDN link to include MathJax: fro LaTeX  -->
+      <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+    {% block baseHead %}
+    {% endblock %}
+
+</head>
+<body>
+    {% block baseBody %}
+    {% endblock %}
+    
+</body>
+</html>

@@ -1,0 +1,14 @@
+Flask
+flask_login
+flask_admin
+flask_sqlalchemy
+sqlalchemy
+Gunicorn
+markdown2
+psycopg2
+Pillow==9.5.0
+cryptography
+werkzeug
+hashlib
+shortuuid
+beautifulsoup4

@@ -1,0 +1,55 @@
+{% extends "baseWithNav.html" %}
+
+{% block baseHead %}
+
+<!-- add SEO -->
+<meta property="og:type" content="article">
+<meta name="author" content="{{ author or '' }}">
+<meta name="keywords" content="{{ keywords or '' }}">
+<meta property="article:published_time" content="{{ post_date }}">
+<meta name="twitter:creator" content="@{{ author }}">
+<meta name="twitter:image" content="{{ img }}">
+<meta property="og:image" content="{{ img }}">
+
+<style>
+    @media only screen and (max-width: 480px){
+        .nav-left-container {
+            width: unset!important;
+        }
+    }
+</style>
+
+{% endblock %}
+
+
+{% block baseWithNavBody %}
+<div class="root">
+    <div class="container">
+
+
+
+        <div class="heading">
+            {{ headingHTML|safe }}
+        </div>
+
+
+        
+
+        <div class="content">
+            {{ contentHTML|safe }}
+            
+         
+        </div>
+    </div>
+</div>
+
+<div class="root footer-bg">
+    <div class="container">
+        {{ rootFooterHTML|safe }}
+        
+        
+    </div>
+</div>
+
+
+{% endblock %}
